@@ -82,7 +82,22 @@ namespace HackerTests
             ////    abDiff = leftDiagonal - rightDiagonal;
             ////}
             ////return Math.Abs(abDiff);
-
+            string VowelRemoval(string str) //Nothing is getting added to newString come back
+            {
+                string newString = "";
+                char[] stri = str.ToCharArray();
+                for(int i = 0; i <= stri.Count() - 1; i++)
+                {
+                    if (stri[i].ToString() != "a" || stri[i].ToString() != "e" || stri[i].ToString() != "i" || stri[i].ToString() != "o" || stri[i].ToString() != "u")
+                    {
+                        newString.Append(stri[i]);
+                    }
+                }
+                return newString.ToString();
+            }
+            string sentence = "This is the best sentence ever!";
+            Console.WriteLine(VowelRemoval(sentence));
+            Console.ReadLine();
         }
     }
 }
