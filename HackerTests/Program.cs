@@ -82,18 +82,27 @@ namespace HackerTests
             ////    abDiff = leftDiagonal - rightDiagonal;
             ////}
             ////return Math.Abs(abDiff);
-            string VowelRemoval(string str) //Nothing is getting added to newString come back
+            string VowelRemoval(string str)
             {
+                char a = 'a';
+                char e = 'e';
+                char eye = 'i';
+                char o = 'o';
+                char u = 'u';
                 string newString = "";
                 char[] stri = str.ToCharArray();
                 for(int i = 0; i <= stri.Count() - 1; i++)
                 {
-                    if (stri[i].ToString() != "a" || stri[i].ToString() != "e" || stri[i].ToString() != "i" || stri[i].ToString() != "o" || stri[i].ToString() != "u")
+                    if (stri[i] != a && stri[i] != e && stri[i] != eye && stri[i] != o && stri[i] != u)
                     {
-                        newString.Append(stri[i]);
+                        newString += (stri[i].ToString());
+                    }
+                    else if(stri[i+1].ToString() == " ")
+                    {
+                        newString += (" ");
                     }
                 }
-                return newString.ToString();
+                return newString;
             }
             string sentence = "This is the best sentence ever!";
             Console.WriteLine(VowelRemoval(sentence));
