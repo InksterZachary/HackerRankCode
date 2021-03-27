@@ -82,31 +82,68 @@ namespace HackerTests
             ////    abDiff = leftDiagonal - rightDiagonal;
             ////}
             ////return Math.Abs(abDiff);
-            string VowelRemoval(string str)
-            {
-                char a = 'a';
-                char e = 'e';
-                char eye = 'i';
-                char o = 'o';
-                char u = 'u';
-                string newString = "";
-                char[] stri = str.ToCharArray();
-                for(int i = 0; i <= stri.Count() - 1; i++)
-                {
-                    if (stri[i] != a && stri[i] != e && stri[i] != eye && stri[i] != o && stri[i] != u)
-                    {
-                        newString += (stri[i].ToString());
-                    }
-                    else if(stri[i+1].ToString() == " ")
-                    {
-                        newString += (" ");
-                    }
-                }
-                return newString;
-            }
-            string sentence = "This is the best sentence ever!";
-            Console.WriteLine(VowelRemoval(sentence));
-            Console.ReadLine();
+
+            //Remove any instances of vowels for a given sentence and return the leftovers ------------------------------
+            ////string VowelRemoval(string str)
+            ////{
+            ////    char a = 'a';
+            ////    char e = 'e';
+            ////    char eye = 'i';
+            ////    char o = 'o';
+            ////    char u = 'u';
+            ////    string newString = "";
+            ////    char[] stri = str.ToCharArray();
+            ////    for(int i = 0; i <= stri.Count() - 1; i++)
+            ////    {
+            ////        if (stri[i] != a && stri[i] != e && stri[i] != eye && stri[i] != o && stri[i] != u)
+            ////        {
+            ////            newString += (stri[i].ToString());
+            ////        }
+            ////        else if(stri[i+1].ToString() == " ")
+            ////        {
+            ////            newString += (" ");
+            ////        }
+            ////    }
+            ////    return newString;
+            ////}
+            ////string sentence = "This is the best sentence ever!";
+            ////Console.WriteLine(VowelRemoval(sentence));
+            ////Console.ReadLine();
+
+            //Prints the ratio of positive, negative, and 0 numbers in a given array ------------------------------------------------------
+            ////void plusMinus(int[] arr)
+            ////{
+            ////    double pos = 0;
+            ////    double neg = 0;
+            ////    double neutral = 0;
+            ////    for (int i = 0; i < arr.Count(); i++)
+            ////    {
+            ////        if (arr[i] < 0)
+            ////        {
+            ////            neg += 1;
+            ////        }
+            ////        else if (arr[i] > 0)
+            ////        {
+            ////            pos += 1;
+            ////        }
+            ////        else
+            ////        {
+            ////            neutral += 1;
+            ////        }
+            ////    }
+            ////    double posD = pos / arr.Count();
+            ////    double negD = neg / arr.Count();
+            ////    double neutD = neutral / arr.Count();
+
+            ////    Console.WriteLine(Math.Round(posD,6));
+            ////    Console.WriteLine(Math.Round(negD, 6));
+            ////    Console.WriteLine(Math.Round(neutD, 6));
+            ////}
+            ////int[] array = { -4, 3, -9, 0, 4, 1 };
+            ////plusMinus(array);
+            ////Console.ReadLine();
+            
+
         }
     }
 }
