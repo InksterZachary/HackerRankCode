@@ -143,7 +143,31 @@ namespace HackerTests
             ////plusMinus(array);
             ////Console.ReadLine();
             
+            //Algorithm to determine if every number up to a specified number is in an array ----------------------------------------------
+            ////int[] testArray = { 1, 2, 3 };
+            ////int[] testArray2 = { 1, 2, 3, 4, 4, 5, 6, 7, 8 };
+            ////int[] testArray3 = { 1, 2, 3, 5, 6, 7, 8 };
+            ////int X = 3;
+            ////int Y = 8;
 
+            ////bool solution(int[] A, int K)
+            ////{
+            ////    int n = A.Length;
+            ////    for (int i = 0; i < n - 1; i++)
+            ////    {
+            ////        if (A[i] + 1 < A[i + 1])
+            ////            return false;
+            ////    }
+            ////    if (A[0] != 1 || A[n - 1] != K)
+            ////    {
+            ////        return false;
+            ////    }
+            ////    else { 
+            ////        return true;
+            ////    }
+            ////}
+            ////Console.WriteLine(solution(testArray3, Y));
+            ////Console.ReadLine();
         }
     }
 }
