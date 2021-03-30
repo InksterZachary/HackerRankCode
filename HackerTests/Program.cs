@@ -180,14 +180,6 @@ namespace HackerTests
                     length--;
                 }
                 return reversedString;
-                //word.ToArray();
-                //word.Split();
-                //List<string> newWord = new List<string>();
-                //for (int i = word.Length - 1; i > 0; i--)
-                //{
-                //    newWord.Add(word[i].ToString());
-                //}
-                //return newWord.Join;
             }
             Console.WriteLine(ReverseString("Johnny"));
             Console.ReadLine();
