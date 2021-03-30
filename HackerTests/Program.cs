@@ -170,19 +170,33 @@ namespace HackerTests
             ////Console.ReadLine();
             
             //Reverse a string algorithm -----------------------------------------------------------------------------------
-            string ReverseString(string word)
+            ////string ReverseString(string word)
+            ////{
+            ////    string reversedString = "";
+            ////    int length = word.Length - 1;
+            ////    while(length >= 0)
+            ////    {
+            ////        reversedString += word[length];
+            ////        length--;
+            ////    }
+            ////    return reversedString;
+            ////}
+            ////Console.WriteLine(ReverseString("Johnny"));
+            ////Console.ReadLine();
+            ///
+            string ReverseWordForLoop(string word)
             {
-                string reversedString = "";
-                int length = word.Length - 1;
-                while(length >= 0)
+                string newWord = "";
+                word.ToCharArray();
+                for(int i = word.Length - 1; i >= 0; i--)
                 {
-                    reversedString += word[length];
-                    length--;
+                    newWord += word[i];
                 }
-                return reversedString;
+                return newWord;
             }
-            Console.WriteLine(ReverseString("Johnny"));
+            Console.WriteLine(ReverseWordForLoop("string"));
             Console.ReadLine();
+
         }
     }
 }
