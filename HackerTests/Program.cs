@@ -142,7 +142,7 @@ namespace HackerTests
             ////int[] array = { -4, 3, -9, 0, 4, 1 };
             ////plusMinus(array);
             ////Console.ReadLine();
-            
+
             //Algorithm to determine if every number up to a specified number is in an array ----------------------------------------------
             ////int[] testArray = { 1, 2, 3 };
             ////int[] testArray2 = { 1, 2, 3, 4, 4, 5, 6, 7, 8 };
@@ -168,8 +168,8 @@ namespace HackerTests
             ////}
             ////Console.WriteLine(solution(testArray3, Y));
             ////Console.ReadLine();
-            
-            //Reverse a string algorithm -----------------------------------------------------------------------------------
+
+            //Reverse a string While Loop -----------------------------------------------------------------------------------
             ////string ReverseString(string word)
             ////{
             ////    string reversedString = "";
@@ -183,20 +183,33 @@ namespace HackerTests
             ////}
             ////Console.WriteLine(ReverseString("Johnny"));
             ////Console.ReadLine();
-            ///
-            string ReverseWordForLoop(string word)
-            {
-                string newWord = "";
-                word.ToCharArray();
-                for(int i = word.Length - 1; i >= 0; i--)
-                {
-                    newWord += word[i];
-                }
-                return newWord;
-            }
-            Console.WriteLine(ReverseWordForLoop("string"));
-            Console.ReadLine();
 
+            //Reverse a string For Loop -----------------------------------------------------------
+            ////string ReverseWordForLoop(string word)
+            ////{
+            ////    string newWord = "";
+            ////    word.ToCharArray();
+            ////    for(int i = word.Length - 1; i >= 0; i--)
+            ////    {
+            ////        newWord += word[i];
+            ////    }
+            ////    return newWord;
+            ////}
+            ////Console.WriteLine(ReverseWordForLoop("string"));
+            ////Console.ReadLine();
+
+            //Print a stair case of "#" and spaces with a height of n
+            void staircase(int n)
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    string hash = "#";
+                    Console.WriteLine(n - (n - i));
+                }
+
+            }
+            staircase(6);
+            Console.ReadLine();
         }
     }
 }
