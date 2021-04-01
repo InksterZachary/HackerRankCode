@@ -201,10 +201,15 @@ namespace HackerTests
             //Print a stair case of "#" and spaces with a height of n
             void staircase(int n)
             {
+                string hash = "";
                 for (int i = 1; i <= n; i++)
                 {
-                    string hash = "#";
-                    Console.WriteLine(n - (n - i));
+                    for(int j = 1; j <= i; j++)
+                    {
+                        hash += "#";
+                    }
+                    Console.WriteLine(hash);
+                    hash = "";
                 }
 
             }
