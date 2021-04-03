@@ -198,23 +198,52 @@ namespace HackerTests
             ////Console.WriteLine(ReverseWordForLoop("string"));
             ////Console.ReadLine();
 
-            //Print a stair case of "#" and spaces with a height of n
-            void staircase(int n)
-            {
-                string hash = "";
-                for (int i = 1; i <= n; i++)
-                {
-                    for(int j = 1; j <= i; j++)
-                    {
-                        hash += "#";
-                    }
-                    Console.WriteLine(hash);
-                    hash = "";
-                }
+            //Print a stair case of "#" and spaces with a height of n -------------------------------------Come back to this one
+            ////void staircase(int n)
+            ////{
+            ////    string hash = "";
+            ////    for (int i = n - 1; i >= 0; i--)
+            ////    {
+            ////        for (int j = 0; j <= i; j++)
+            ////        {
+            ////            if(j <= Math.Abs(n - i))
+            ////            {
+            ////                hash += " ";
+            ////            }
+            ////            else if(j )
+            ////        }
+            ////        Console.WriteLine(hash);
+            ////        hash = "";
+            ////    }
 
-            }
-            staircase(6);
-            Console.ReadLine();
+            ////}
+            ////staircase(6);
+            ////Console.ReadLine();
+            ///
+
+            //Given ant size number array find the minimum and maximum number you can get by adding only 4 numbers together from the array ---------------------
+            ////void MiniMaxSum(int[] arr)
+            ////{
+            ////    long min = 0;
+            ////    long max = 0;
+            ////    int maximumLength = arr.Length - 5;
+            ////    Array.Sort(arr);
+            ////    for(int i = 0; i < 4; i++)
+            ////    {
+            ////        min += arr[i];
+            ////    }
+            ////    for(int i = arr.Length - 1; i > maximumLength; i--)
+            ////    {
+            ////        max += arr[i];
+            ////    }
+            ////    Console.WriteLine(min + " " + max);
+            ////}
+            ////int[] array = { 3, 4, 5, 6, 10, 7, 8, 9, 11, 2 };
+
+            ////MiniMaxSum(array);
+            ////Console.ReadLine();
+
+            
         }
     }
 }
