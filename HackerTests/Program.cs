@@ -243,7 +243,31 @@ namespace HackerTests
             ////MiniMaxSum(array);
             ////Console.ReadLine();
 
-            
+            //Count the number of tallest birthday candles in a List ----------------------------------------------
+            int BirthdayCakeCandles(List<int> candles)
+            {
+                candles.Sort();
+                int maxHeight = candles[candles.Count - 1];
+                int maxCounter = 0;
+                for(int i = 0; i <= candles.Count - 1; i++)
+                {
+                    if(maxHeight == candles[i])
+                    {
+                        maxCounter++;
+                    }
+                }
+                return maxCounter;
+            }
+            List<int> cakeCandles = new List<int>();
+            cakeCandles.Add(1);
+            cakeCandles.Add(2);
+            cakeCandles.Add(6);
+            cakeCandles.Add(3);
+            cakeCandles.Add(4);
+            cakeCandles.Add(6);
+            cakeCandles.Add(6);
+            Console.WriteLine(BirthdayCakeCandles(cakeCandles));
+            Console.ReadLine();
         }
     }
 }
