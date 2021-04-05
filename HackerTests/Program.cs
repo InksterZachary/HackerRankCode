@@ -199,27 +199,38 @@ namespace HackerTests
             ////Console.ReadLine();
 
             //Print a stair case of "#" and spaces with a height of n -------------------------------------Come back to this one
-            ////void staircase(int n)
-            ////{
-            ////    string hash = "";
-            ////    for (int i = n - 1; i >= 0; i--)
-            ////    {
-            ////        for (int j = 0; j <= i; j++)
-            ////        {
-            ////            if(j <= Math.Abs(n - i))
-            ////            {
-            ////                hash += " ";
-            ////            }
-            ////            else if(j )
-            ////        }
-            ////        Console.WriteLine(hash);
-            ////        hash = "";
-            ////    }
+            void staircase(int n)
+            {
+                string hash = "";
+                int[] arr = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                    arr[i] = i + 1;
+                }
+                foreach(int num in arr)
+                {
+                    int x = num;
+                    do
+                    {
+                        hash += " ";
+                        x++;
+                    }
+                    while (x <= n - num);
+                    do
+                    {
+                        hash += "#";
+                        x++;
+                    }
+                    while (x <= n);
+                    Console.WriteLine(hash);
+                    hash = "";
+                    x = 0;
+                }
+            }
+            staircase(6);
+            Console.ReadLine();
 
-            ////}
-            ////staircase(6);
-            ////Console.ReadLine();
-            ///
+
 
             //Given ant size number array find the minimum and maximum number you can get by adding only 4 numbers together from the array ---------------------
             ////void MiniMaxSum(int[] arr)
@@ -244,30 +255,30 @@ namespace HackerTests
             ////Console.ReadLine();
 
             //Count the number of tallest birthday candles in a List ----------------------------------------------
-            int BirthdayCakeCandles(List<int> candles)
-            {
-                candles.Sort();
-                int maxHeight = candles[candles.Count - 1];
-                int maxCounter = 0;
-                for(int i = 0; i <= candles.Count - 1; i++)
-                {
-                    if(maxHeight == candles[i])
-                    {
-                        maxCounter++;
-                    }
-                }
-                return maxCounter;
-            }
-            List<int> cakeCandles = new List<int>();
-            cakeCandles.Add(1);
-            cakeCandles.Add(2);
-            cakeCandles.Add(6);
-            cakeCandles.Add(3);
-            cakeCandles.Add(4);
-            cakeCandles.Add(6);
-            cakeCandles.Add(6);
-            Console.WriteLine(BirthdayCakeCandles(cakeCandles));
-            Console.ReadLine();
+            ////int BirthdayCakeCandles(List<int> candles)
+            ////{
+            ////    candles.Sort();
+            ////    int maxHeight = candles[candles.Count - 1];
+            ////    int maxCounter = 0;
+            ////    for(int i = 0; i <= candles.Count - 1; i++)
+            ////    {
+            ////        if(maxHeight == candles[i])
+            ////        {
+            ////            maxCounter++;
+            ////        }
+            ////    }
+            ////    return maxCounter;
+            ////}
+            ////List<int> cakeCandles = new List<int>();
+            ////cakeCandles.Add(1);
+            ////cakeCandles.Add(2);
+            ////cakeCandles.Add(6);
+            ////cakeCandles.Add(3);
+            ////cakeCandles.Add(4);
+            ////cakeCandles.Add(6);
+            ////cakeCandles.Add(6);
+            ////Console.WriteLine(BirthdayCakeCandles(cakeCandles));
+            ////Console.ReadLine();
         }
     }
 }
