@@ -203,28 +203,7 @@ namespace HackerTests
             {
                 string hash = "";
                 int[] arr = new int[n];
-                for (int i = 0; i < n; i++)
-                {
-                    arr[i] = i + 1;
-                }
-                foreach(int num in arr)
-                {
-                    int x = num;
-                    do
-                    {
-                        hash += " ";
-                        x++;
-                    }
-                    while (x <= n - num);
-                    do
-                    {
-                        hash += "#";
-                        x++;
-                    }
-                    while (x <= n);
-                    Console.WriteLine(hash);
-                    hash = "";
-                    x = 0;
+                
                 }
             }
             staircase(6);
