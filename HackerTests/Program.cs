@@ -201,16 +201,14 @@ namespace HackerTests
             //Print a stair case of "#" and spaces with a height of n -------------------------------------Come back to this one
             void staircase(int n)
             {
-                string hash = "";
-                int[] arr = new int[n];
-                
+                for(int i = 0; i < n; i++)
+                {
+                    Console.WriteLine(new String('#', i + 1).PadLeft(n, ' '));
                 }
             }
-            staircase(6);
+            staircase(10);
             Console.ReadLine();
-
-
-
+        
             //Given ant size number array find the minimum and maximum number you can get by adding only 4 numbers together from the array ---------------------
             ////void MiniMaxSum(int[] arr)
             ////{
